@@ -1,0 +1,90 @@
+/*Estilos basicos*/
+
+	a {
+	  	color:#192666;
+	}
+	a:hover {
+ 		 color:#4F6AD7;
+	}
+
+	p {
+  		margin: 1em 0;
+  		padding: 0;
+	}
+
+	.clear {
+  		clear: both;
+	}
+
+	h1, h2, h3, h4, h5 {
+  		margin: 1em 0;
+  		padding:0;
+	}
+
+	h1 {
+  		font-size: 260%;
+ 		font-family: "georgia", serif;
+  		font-weight: normal;
+	}
+
+	h2 {
+  		font-size:180%;
+  		font-family: "georgia", serif;
+  		font-weight:normal;
+	}
+
+	h3 {
+ 		 font-size:120%;
+  		font-weight:bold;
+	}	
+
+	ul, ol {
+ 		 margin: 1em 0 1em 2em;
+  		padding:0;
+	}
+
+/*Layouts*/
+
+.articulo {
+	background-color: #f2f5fe;
+	padding-bottom: 3em;
+	margin-bottom: 2em;
+	border-top-left-radius:3em;
+	box-shadow: inset 10px -10px 15px #b0bfe3;
+}
+
+.cabecera {
+	padding-top: 3em;
+	padding-bottom:3em;
+	background: #28419e;
+	border-top-left-radius:3em;
+	border-top-right-radius:3em;
+
+}
+.cabecera h1 a{
+	color:white;
+	margin-left: 2em;
+	
+}
+.principal {
+	background-color: white;
+	padding-top: 2em;
+}
+
+.secundario {
+	background-color: #b0bfe3;
+	border-top-right-radius:2em;
+	border-bottom-right-radius:2em;
+}
+.articulo h2 {
+	background-color: #b0bfe3;
+	padding: 0.2em;
+	padding-left: 1em;
+}
+.container {
+	/* The old syntax, deprecated, but still needed, prefixed, for WebKit-based and old browsers */
+	background: -prefix-linear-gradient(top, #d1dbed, white); 
+ 
+	/* The new syntax needed by standard-compliant browsers (Opera 12.1, IE 10, Fx 16 onwards), without prefix */
+	background: linear-gradient(to bottom, #d1dbed, white);
+}

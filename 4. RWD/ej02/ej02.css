@@ -1,0 +1,153 @@
+/* --------------------------------
+Site:       Site name
+CSS author: Your name here
+Updated:    Date
+Updated by: Your name here
+-------------------------------- */
+
+/* ----------------------------
+simple reset
+---------------------------- */
+* {
+	box-sizing: border-box;
+}
+html, body, ul, ol, li, form, fieldset, legend
+{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p { margin-top: 0;padding:1em; }
+fieldset,img { border: 0; }
+legend { color: #000; }
+li { list-style: none; }
+sup { vertical-align: text-top; }
+sub { vertical-align: text-bottom; }
+
+table
+{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th, td
+{
+    text-align: left;
+    vertical-align: top;
+    font-weight: normal;
+}
+
+input, textarea, select
+{
+    font-size: 110%;
+    line-height: 1.1;
+}
+
+abbr, acronym
+{
+    border-bottom: .1em dotted;
+    cursor: help;
+}
+
+body
+{
+    
+    color: #000;
+    background: #fff;
+    font: 16px/1.6 "DejaVu Sans", "URW Gothic L", "Helvetica Neue", Helvetica, Arial, "Microsoft Sans Serif", sans-serif;
+    margin: 20px 0;
+}
+
+#container
+{
+    /*float: left;*/
+    /*width: 1000px;*/
+    width: 90%;
+    max-width:1000px;
+    background: #bbb;
+    margin: 0 auto;
+   }
+
+
+#nav
+{
+    float: left;
+    width: 20%; /*200px/1000px*/
+    background: lime;
+}
+
+#content
+{
+    float: left;
+    width: 50%; /*550px/1000px*/
+    margin: 0 0 0 2.5%;/*25px/1000px*/
+    background: yellow;
+}
+
+#extras
+{
+    float: right;
+    width: 20%; /*200px/1000px*/
+    background: gray;
+}
+
+.feature-image
+{
+    float: right;
+   
+    margin: 0 0 10px 10px;
+}
+
+img {
+	 max-width:100%;
+}
+.clearfix::before, .clearfix::after {
+	display: table;
+	content: " ";
+}
+.clearfix::after{
+	clear: both;
+}
+
+h1{
+	margin-left: 0px;
+	padding-left:0.5em;
+}
+/*css para pantallas de entre 480 y 1000*/
+
+@media (max-width: 1000px) {
+
+	#container {
+	width: 95%;
+	}
+
+	#content {
+	width: 77.5%;
+	}
+	
+#extras {
+	width: 77.5%;
+	float:left;
+	margin-left:22.5%;/*100%-77.5%*/
+	clear:left;
+	
+}
+
+@media (max-width: 480px){
+	body {
+		margin: 0;
+	}
+	
+	body #container h1 {
+	margin-left: 0;
+	}
+	
+	#container, #nav, #extras, #content {
+		float:none;
+		width: 100%;
+		margin:0;
+	}
+	#content img {
+		display:none;
+		}
+}
