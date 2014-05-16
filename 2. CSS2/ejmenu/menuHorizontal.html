@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>menuVertical</title>
+	<meta name="author" content="Javi" />
+	<!-- Date: 2013-12-10 -->
+	<style type="text/css">
+	
+	
+	a, li, span {
+		border: 1px solid black;
+	}
+	
+	ul.menu > li{
+		float: left;
+		width: 200px;
+	}
+	
+	ul.menu {
+		overflow: hidden;
+	}
+	
+	ul {
+		padding: 0em; /*elimino el paddind x defecto de todos los ul*/
+	}
+	
+	li{
+		list-style: none;
+		
+	}
+	
+	ul.menu li a, ul.menu li span {
+		padding: 0.5 em 1em;
+		display: block;
+		background-color: grey;
+		text-decoration: none;
+		color: #333;
+		text-align: center;	
+	}
+	
+	ul.submenu > li {
+		display: none;
+		width: 200px;	
+	}
+	
+	ul.submenu {
+		position:absolute;
+	}
+	
+	.menu > li:hover > .submenu li {
+		display: block;
+	}
+	
+	ul.menu > li a:hover {
+		background-color: #333366 ;
+		color: white;
+	}
+	
+	ul.submenu li a:hover {
+		background-color: #333399;
+		color:red;
+	}
+	
+</style>
+</head>
+<body>
+<ul class="menu">
+    <li><a href="#">Elemento 1</a>
+    	<ul class="submenu">
+		    <li><a href="#">Elemento 1.1</a></li>
+		    <li><a href="#">Elemento 1.2</a></li>
+		    <li><a href="#">Elemento 1.3</a></li>
+		    <li><a href="#">Elemento 1.4</a></li>
+		</ul>
+    </li>
+    
+    <li><a href="#">Elemento 2</a>
+    	<ul class="submenu">
+		    <li><a href="#">Elemento 2.1</a></li>
+		    <li><a href="#">Elemento 2.2</a></li>
+		    <li><a href="#">Elemento 2.3</a></li>
+		    <li><a href="#">Elemento 2.4</a></li>
+		</ul>
+    </li>
+    
+    <li><a href="#">Elemento 3</a>
+    	<ul class="submenu">
+		    <li><a href="#">Elemento 3.1</a></li>
+		    <li><a href="#">Elemento 3.2</a></li>
+		    <li><a href="#">Elemento 3.3</a></li>
+		    <li><a href="#">Elemento 3.4</a></li>
+		</ul>
+    </li>
+    
+    <!-- <li><a href="#">Elemento 4</a>
+    	<ul class="submenu">
+		    <li><a href="#">Elemento 4.1</a></li>
+		    <li><a href="#">Elemento 4.2</a></li>
+		    <li><a href="#">Elemento 4.3</a></li>
+		    <li><a href="#">Elemento 4.4</a></li>
+		</ul>
+    </li>
+    <li><a href="#"style="border-right: none">Elemento 5</a>
+    	<ul class="submenu">
+		    <li><a href="#">Elemento 5.1</a></li>
+		    <li><a href="#">Elemento 5.2</a></li>
+		    <li><a href="#">Elemento 5.3</a></li>
+		    <li><a href="#">Elemento 5.4</a></li>
+		</ul>
+    </li> -->
+ 
+</ul>
+</body>
+</html>
+

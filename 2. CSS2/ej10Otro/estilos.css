@@ -1,0 +1,146 @@
+.clearfix:before, .clearfix:after {
+     display: table;
+     content: " ";
+}
+.clearfix:after { clear: both; }
+
+#contenedor {
+	width: 760px;
+	margin:20px auto;
+	border: 1px solid silver;
+	background-color: grey;
+	overflow: hidden;
+	}
+	
+label {
+  display: block;
+  margin: .5em 0 0 0;
+}
+
+	
+ul li  {
+	list-style: none;
+	}
+	
+ul {
+	padding: 0em;
+}
+	
+.titulo {
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.requerido{
+	color:red;
+}
+
+.alert {
+	color:red;
+}
+
+.hidden {
+	display: none;
+}
+
+.inline-block {
+	display: inline-block;
+}
+
+.fleft {
+	float:left;
+}
+
+.fleftno {
+	float:none; clear: both;
+}
+.fright {
+	float: right;
+}
+
+.frightno {
+	float:none; clear: both;
+}
+
+.width50 {
+	width: 50%;
+}
+
+.width49 {
+	width: 49%;
+}
+.campo {
+	width: 80%;
+}
+
+.small {
+	width: 60%;
+}
+
+.clearIzk {
+	clear: left;
+}
+
+.acciones {
+	clear: both;
+	float:none;
+	width: 100%;
+	border-top: 3px solid white;
+	padding-top: 1em;
+}
+
+.acciones input {
+	float:right;
+}
+
+li:hover {
+	background-color: #FF9;
+}
+
+input:focus {
+	background: #E6B700;
+	border: 2px solid #000;
+}
+
+
+
+
+
+/*modificarlo para que salga en una sola columna*/
+
+li.fleft, li.fright {
+	float:none;
+	width: 100%;
+}
+
+li span.reduce {
+	width: 100%;
+}
+
+ .titulo {
+	width: 200px;
+	float: left;
+	width: 40%;
+	clear: left;
+}
+
+div.campos {
+	float:left;
+	width: 65%;
+}
+
+.over {float: left; width: 60%;}
+/*
+li:hover .ayuda {
+	display:block;
+}
+
+li .ayuda {
+	position: absolute;
+	top:0;
+	right:0;
+}
+
+li {
+	position: relative;
+}*/

@@ -1,0 +1,100 @@
+ul li  {
+	list-style: none;
+	}
+	
+label.titulo {
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+
+.fleft {
+	float:left;
+}
+
+.fright {
+	float: right;
+}
+
+.width50 {
+	width: 50%;
+}
+
+.width51 {
+	width: 51%;
+}
+
+.width49 {
+	width: 49%;
+}
+.requerido {
+	color: red;
+}
+
+.margen2 {
+	margin-top: 1em;
+}
+
+.margen3 {
+	margin-top: 2em;
+}
+
+.margen6 {
+	margin-top:6em;
+}
+.margenInf {
+	margin-bottom: 3em;
+}
+.block {
+	display: block;
+}
+
+#contenedor {
+	overflow: hidden;
+}
+
+.over {
+	overflow: hidden;
+}
+
+label {
+ display: block;
+  margin: .5em 0 0 0;
+}
+
+.inline{
+	display:inline-block;
+}
+
+
+.ayuda{
+	display:none;
+}
+
+input #nombre {
+	
+}
+
+.reducir input{
+	width: 30%;
+}
+
+.reducir2 input{
+	width: 10%;
+}
+/*#prueba span input {
+	width: 20%;
+}*/
+.clearfix:after {
+    content:”.”;
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+.clearfix {display:inline-block;}
+/* Hide from IE Mac \*/
+.clearfix {display:block;}
+/* End hide from IE Mac */
+#divflotante {
+    float:left;
+}

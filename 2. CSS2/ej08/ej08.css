@@ -1,0 +1,20 @@
+ul {
+	
+}
+
+.negrita {
+	font-weight: bold;
+}
+
+ul li a {
+	color:#CC0000;
+}
+
+ul li a:hover {
+	background-color: #CC0000;
+	color:white;
+}
+
+ul li a:visited {
+	color:#CCC;
+}

@@ -1,0 +1,50 @@
+tr th {
+	background-color: grey;
+	border: 1px solid black;
+}
+
+table {
+	text-align: center;
+	border-collapse: collapse;
+	font-family: "Arial";
+}
+
+table tr td.amarillo{
+	background-color: #FFFFCC;
+}
+
+table tr th.euro  span{
+	background-image: url(./euro.png);
+	background-repeat: no-repeat;
+	margin-right: 3em;
+	padding-left: 2em;	
+}
+
+table tr th.dolar  span{
+	background-image: url(./dolar.png);
+	background-repeat: no-repeat;
+	margin-right: 3em;
+	padding-left: 2em;
+	
+}
+
+table tr th.yen  span{
+	background-image: url(./yen.png);
+	background-repeat: no-repeat;
+	margin-right: 3em;
+	padding-left: 2em;
+	
+}
+
+table tr th.libra  span{
+	background-image: url(./libra.png);
+	background-repeat: no-repeat;
+	margin-right: 3em;
+	padding-left: 2em;
+	
+}
+
+
+.euro, .dolar, .yen, .libra {
+	background-color: #E6F3FF;
+}

@@ -1,0 +1,99 @@
+#contenedor {
+	
+	background-color: #F2F5FE;
+	width: 770px;
+	height: 1024px;
+	margin: 0 auto;
+	padding: 2em;
+	background-image:url(fondo.gif);
+}
+
+body {
+	font-family: "Verdana";
+	color: #192666;
+}
+
+#cabecera {
+	background-image:url(imagenes/cabecera.jpg);
+	width: 770px;
+	margin: 0 auto;
+	height: 100px;
+}
+
+#cabecera h1 a {
+	color: white;
+	font-size: 1em;
+	margin-top: 1em;
+	
+}
+
+#cabecera h1{
+	display: inline-block;
+	width: 50%;
+}
+
+#pie {
+	width: 770px;
+}
+
+#contenido #principal {
+	width: 530px;
+}
+
+#contenido #secundario {
+	width: 200px;
+}
+
+#menu {
+	display: block;
+	overflow: hidden;
+	background-color: #253575;
+	padding: 0.3em 0em;
+	
+}
+
+#menu ul {
+	padding:0px;
+	margin:0px;
+	list-style: none;
+}
+
+#menu ul li a{
+	color: white;
+	text-decoration: none;
+	padding: 1.5em;	
+	color:#B5C4E3;
+}
+
+#menu ul li a:hover{
+	background-color: #31479B;
+}
+
+#menu ul li a:active{
+	background-color: white;
+	color: #FF9000;
+}
+#buscador form legend{
+	display: none;
+}
+#buscador {
+	margin-top: 1.5em;
+}
+.fright{
+	float:right;
+}
+
+.fleft {
+	float: left;
+}
+input {
+	margin-top: -25px;
+}
+
+.clearfix:before, .clearfix:after {
+     display: table;
+     content: " ";
+}
+.clearfix:after { clear: both; }
+
+	

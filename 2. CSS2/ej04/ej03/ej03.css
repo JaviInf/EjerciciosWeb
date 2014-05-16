@@ -1,0 +1,143 @@
+/* === IMPORTANTE ===================================================
+   No modificar estos estilos, ya que son imprescindibles para
+   que la p�gina se vea correctamente.
+   ================================================================== */
+
+/*-- B�sico ----------------------------------------------------------*/
+ul, ul li { 
+	margin: 0; 
+	padding: 0; 
+	list-style: none; 
+	}
+	
+h1, h2, h3, p, form { 
+	margin: 0;
+	padding: 0;
+	  }
+	  
+.clear { 
+	clear: both;
+	 }
+	 
+img {
+	 border: none;
+	  }
+
+/*-- Layout ----------------------------------------------------------*/
+#contenedor {
+  width: 90%;
+  max-width: 900px;
+  width: expression(document.body.clientWidth > 901? "900px": "auto");
+  margin: 0 auto;
+}
+
+#cabecera, #menu, #lateral, #contenido, #contenido #principal, #contenido #secundario, #pie {
+  border: none;
+}
+
+#cabecera { 
+	clear: both; 
+	padding: 1em;
+	}
+#cabecera h1{
+	/*background-image: url("logo.gif");*/}
+#menu {
+	clear: both; 
+	padding: 0.5em;
+	margin-bottom: 0.5em;
+	border-bottom: 1px double #004C99;
+	background-image: url("fondo_menu.gif");
+	}
+	
+#lateral {
+	 float: left; 
+	 width: 20%;
+	  }
+	  
+#contenido { 
+	float: right; 
+	width: 78%; 
+	}
+	
+#noticias {
+	border: 1px #C5C5C5 solid;
+	background-color: #F8F8F8;
+}
+	
+#contenido #principal { 
+	float: left;
+	 width: 78%; 
+	 }
+	 
+#contenido #secundario {
+	 float: right; 
+	 width: 15%; 
+	 
+	 padding: 0.5em;
+	 border: 1px solid #CC6600;
+	 }
+#contenido #secundario h2{
+	background-color: #FFF6CD;
+	padding: .2em;
+}
+	 
+#pie { 
+	clear: both;
+	padding-top:0.5em;
+	padding-bottom: 0.5em; 
+	margin-top: 1em;
+	border-bottom: 1px solid #C5C5C5;
+	border-top: 1px solid #C5C5C5;
+	background-color: #F8F8F8;
+	 }
+	 
+#noticias, #publicidad, #principal{
+	padding:0.50em;
+}
+
+#publicidad{
+	margin-top: 1em;
+	border: 1px dashed #CC6600; 
+	background-color: #FFF6CD;
+}
+
+/*-- Cabecera --------------------------------------------------------*/
+#cabecera #logo {
+	 float: left; 
+	 	background-image: url("logo.gif");
+
+	}
+
+#cabecera #buscador {
+	 float: right;
+	  }
+
+/*-- Menu ------------------------------------------------------------*/
+#menu ul#menu_principal li {
+	 display: inline;
+	  float: left; 
+	  }
+
+/*-- Secci�n Principal -----------------------------------------------*/
+#contenido #principal .articulo img { 
+	width: 100px;
+	 float: left; 
+	 margin:0.5em;
+	 }
+
+/*-- Pie de p�gina ---------------------------------------------------*/
+#pie .enlaces   {
+	 float: left; 
+	 }
+	 
+#pie .copyright { 
+	float: right;
+	 }
+	 
+.articulo{
+	margin-bottom: 1em;
+}
+/* === IMPORTANTE ===================================================
+   A partir de aqu�, se pueden a�adir todos los estilos propios que 
+   sean necesarios.
+   ================================================================== */

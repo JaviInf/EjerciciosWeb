@@ -1,0 +1,28 @@
+.wrapper {
+	background-image: url(imagenes/fondo.gif);
+	width: 760px;
+	height: 1024px;
+	margin: 0 auto;
+	padding-top: 3em;
+}
+
+.header {
+	background-image: url(imagenes/cabecera.jpg);
+	width: 90%;
+	margin: 0 auto;
+	height: 100px;
+
+}
+
+.header h1 {
+	margin-left:1em;
+	padding-top: 0.5em;
+	margin-bottom: 0px;
+	font-style: Verdana;
+}
+.fright{
+	float:right;
+}
+input {
+	margin-top: -25px;
+}
