@@ -1,0 +1,26 @@
+body {
+	
+}
+
+#configuracion #opciones input {
+width: 60px;
+height: 20px;
+float:right;
+}
+
+#configuracion #opciones .select {
+border:2px solid grey;
+}
+
+#features a {
+	text-decoration: none;
+	color: white;
+	padding: 2em;
+	margin-top: 2em;
+}
+
+#features a.button {
+	padding: 2em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
