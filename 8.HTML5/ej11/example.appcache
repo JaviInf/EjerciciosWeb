@@ -1,0 +1,19 @@
+CACHE MANIFEST
+# 2014-01-31:v6
+ 
+CACHE:
+index.html
+css/main.css
+js/main.js
+js/time.js
+css/normalize.css
+js/vendor/jquery-1.10.2.min.js
+js/vendor/modernizr-2.7.1.min.js
+ 
+# Resources that require the user to be online.
+NETWORK:
+*
+
+FALLBACK:
+js/serverTime.js /js/serverTimeFallback.js
+

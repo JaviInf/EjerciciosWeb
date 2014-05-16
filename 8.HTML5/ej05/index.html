@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+		<link rel="icon" type="image/png" href="favicon.ico" />
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.7.1.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<!-- Add your site or application content here -->
+		<p>
+			Ejercicio 5 video en HTML5.
+		</p>
+		<div id="vid" class="video">
+		<video controls>
+			<source src="BMX.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+			<source src="BMX.webm" type='video/webm; codecs="vp8, vorbis"'>
+			<p>Your browser doesn’t support video.
+			Please download the video in <a href="leverage-a-synergy.webm">webM</a>
+			or <a href="leverage-a-synergy.mp4">MP4</a> format.
+			</p>
+		</video>	
+		<form action="#" method="POST" id="registro">
+			<fieldset>
+				<legend>
+					Controles		</legend>
+				<input type="submit" value="Iniciar" id="iniciar">
+				<input type="submit" value="Pausa" id="Pausa">
+				<input type="submit" value="Parar" id="Parar">
+				<input type="submit" value="Avanzar" id="Avanzar">
+				<input type="submit" value="Retroceder" id="Retroceder">
+				<input type="submit" value="Inicio" id="Inicio">
+				<input type="submit" value="Fin" id="Fin">
+				<input type="submit" value="Pantalla Completa" id="PantallaCompleta">
+				<input type="range" id="rango">
+				<progress id="barra" value="0" max="16"></progress>
+			</fieldset>
+		</form>
+		</div>
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+		</script>
+		<script src="js/nuevo.js"></script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<!-- <script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script> -->
+	</body>
+</html>

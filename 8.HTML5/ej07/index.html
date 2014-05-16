@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="no-js">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title></title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Place favicon.ico and apple-touch-icon(s) in the root directory -->
+		<link rel="icon" type="image/png" href="favicon.ico" />
+
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/main.css">
+		<script src="js/vendor/modernizr-2.7.1.min.js"></script>
+	</head>
+	<body>
+		<!--[if lt IE 8]>
+		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+		<![endif]-->
+
+		<!-- Add your site or application content here -->
+		<p>
+			Ejercicio Cutre Canvas.
+		</p>
+
+		<canvas id="tutorial" width="500" height="500"></canvas>
+		<div id="contenedor">
+			<div id="contenedor_pizarra">
+				<canvas id="pizarra" width="300px" height="200px"></canvas>
+				<br/>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			var c = document.getElementById("tutorial");
+			var cxt = c.getContext("2d");
+			//cara
+
+			cxt.beginPath();
+			cxt.arc(250, 60, 50, 0, Math.PI * 2, true);
+			cxt.closePath();
+			// cxt.stroke();
+			// cxt.strokeStyle="blue";
+			cxt.fill();
+			cxt.fillStyle = "blue";
+
+			//boka
+			cxt.beginPath();
+			cxt.arc(230, 50, 10, 0, Math.PI * 2, true);
+			cxt.closePath();
+			cxt.fill();
+
+			cxt.beginPath();
+			cxt.arc(270, 50, 10, 0, Math.PI * 2, true);
+			cxt.closePath();
+			cxt.fill();
+			cxt.fillStyle = "green";
+
+			cxt.beginPath();
+			cxt.arc(230, 50, 5, 0, Math.PI * 2, true);
+			cxt.closePath();
+			cxt.fill();
+			cxt.beginPath();
+			cxt.arc(270, 50, 5, 0, Math.PI * 2, true);
+			cxt.closePath();
+			cxt.fill();
+
+			cxt.fillStyle = "red";
+
+			cxt.beginPath();
+			cxt.arc(250, 80, 20, 0, Math.PI, false);
+			cxt.closePath();
+			cxt.fill();
+			cxt.strokeStyle = "black";
+			//cejas
+			cxt.beginPath();
+			cxt.arc(230, 36, 15, 0, Math.PI, true);
+			cxt.closePath();
+			cxt.stroke();
+
+			cxt.beginPath();
+			cxt.arc(270, 36, 15, 0, Math.PI, true);
+			cxt.closePath();
+			cxt.stroke();
+			cxt.strokeStyle = "green";
+
+			//brazo izk
+			cxt.moveTo(260, 190);
+			cxt.beginPath();
+			cxt.lineTo(250, 150);
+			cxt.lineTo(300, 235);
+			cxt.closePath();
+			cxt.stroke();
+			//brazo der
+			cxt.moveTo(260, 190);
+			cxt.beginPath();
+			cxt.lineTo(250, 150);
+			cxt.lineTo(200, 235);
+			cxt.closePath();
+			cxt.stroke();
+			//cuerpo
+			cxt.moveTo(260, 190);
+			cxt.beginPath();
+			cxt.lineTo(250, 110);
+			cxt.lineTo(250, 235);
+			cxt.closePath();
+			cxt.stroke();
+
+			cxt.moveTo(250, 110);
+			cxt.beginPath();
+			cxt.lineTo(240, 164);
+			cxt.lineTo(245, 235);
+			cxt.closePath();
+			cxt.stroke();
+
+			cxt.moveTo(250, 110);
+			cxt.beginPath();
+			cxt.lineTo(260, 164);
+			cxt.lineTo(255, 235);
+			cxt.closePath();
+			cxt.stroke();
+			cxt.strokeStyle = "purple";
+
+			cxt.moveTo(250, 235);
+			cxt.beginPath();
+			cxt.lineTo(250, 235);
+			cxt.lineTo(290, 350);
+			cxt.closePath();
+			cxt.stroke();
+			cxt.moveTo(250, 235);
+			cxt.beginPath();
+			cxt.lineTo(254, 235);
+			cxt.lineTo(294, 350);
+			cxt.closePath();
+			cxt.stroke();
+
+			cxt.moveTo(250, 235);
+			cxt.beginPath();
+			cxt.lineTo(250, 235);
+			cxt.lineTo(210, 350);
+			cxt.closePath();
+			cxt.stroke();
+			cxt.moveTo(250, 235);
+			cxt.beginPath();
+			cxt.lineTo(244, 235);
+			cxt.lineTo(206, 350);
+			cxt.closePath();
+			cxt.stroke();
+
+			// zapatos
+			cxt.moveTo(206, 250);
+			cxt.beginPath();
+			cxt.arc(296, 355, 20, 0, Math.PI, true);
+			cxt.closePath();
+			cxt.fill();
+			cxt.moveTo(206, 250);
+			cxt.beginPath();
+			cxt.arc(206, 355, 20, 0, Math.PI, true);
+			cxt.closePath();
+			cxt.fill();
+
+		</script>
+
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script>
+			window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')
+		</script>
+		<script src="js/plugins.js"></script>
+		<script src="js/main.js"></script>
+
+		<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+		<!-- <script>
+		(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+		function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+		e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+		e.src='//www.google-analytics.com/analytics.js';
+		r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+		ga('create','UA-XXXXX-X');ga('send','pageview');
+		</script> -->
+	</body>
+</html>

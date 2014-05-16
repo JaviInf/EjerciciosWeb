@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Ejercicio 4</title>
+  
+  <script type="text/javascript" src="../modernizr.custom.98688.js"></script>
+  <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <!-- <script src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script> -->
+  <!-- <link rel="stylesheet" href="/resources/demos/style.css"> -->
+  
+  
+ 
+</head>
+<body>
+ 
+<p>Fecha: <input type="date" id="datepicker"></p>
+ 
+  <script>
+ 	Modernizr.load({
+ 		test: Modernizr.inputtypes.date,
+ 		nope: 'http://code.jquery.com/ui/1.10.4/jquery-ui.js',
+ 		callback: function (url, result, key) {
+			 $( "#datepicker" ).datepicker();}
+ 	});
+ 	
+ 	 // $(function() {
+    // 
+  // });
+
+  </script>
+ 
+</body>
+</html>

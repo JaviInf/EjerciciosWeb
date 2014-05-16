@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+		<title>Ejercicio 2 HTML5</title>
+		<meta name="description" content="" />
+		<meta name="author" content="iMac 9" />
+		<meta name="viewport" content="width=device-width; initial-scale=1.0" />
+	</head>
+
+	<body>
+		
+		<form action="#" method="POST" id="registro">
+        <fieldset>
+            <legend>Ejercicio2</legend>
+
+			<label for="email">Email: </label>
+			<!-- <input type="email" name="email" id="email"> -->
+			<input type="email" name="email">
+			<br />
+			<br />
+			<label for="url">URL: </label>
+			<input type="url" id="url">
+			<br />
+			<br />
+
+			<label for="fecha">Fecha: </label>
+			<input type="date" id="fecha">
+			<br />
+			<br />
+
+			<label for="hora">Hora: </label>
+			<input type="time" id="hora">
+			<br />
+			<br />
+
+			<label for="horafecha">Hora y Fecha: </label>
+			<input type="datetime" id="horafecha">
+			<br />
+			<br />
+
+			<label for="mes">Mes: </label>
+			<input type="month" id="mes">
+			<br />
+			<br />
+
+			<label for="semana">Semana: </label>
+			<input type="week" id="semana">
+			<br />
+			<br />
+
+			<label for="numero">Numero: </label>
+			<input type="number" id="numero">
+			<br />
+			<br />
+
+			<label for="rango">Rango: </label>
+			<input type="range" id="rango">
+			<br />
+			<br />
+
+			<label for="telefono">Telefono: </label>
+			<input type="tel" id="telefono">
+			<br />
+			<br />
+
+			<label for="busqueda">Busqueda: </label>
+			<input type="search" id="busqueda">
+			<br />
+			<br />
+
+			<label for="color">Color: </label>
+			<input type="color" id="color">
+			<br />
+			<br />
+
+			<!-- 2 nuevo datalist -->
+			<label for="form-provincia">Provincia: </label>
+			<input id="form-provincia" type="text" list="mylist">
+			<datalist id="mylist">
+				<option label="G" value="Gipuzkoa"><option label="B" value="Bizkaia"><option label="A" value="Araba">
+			</datalist><br /><br />
+			<!-- 3 atributos -->
+			<label for="atributos">Prueba Atributos: </label>
+			<input type="text" id="atributos" autofocus autocomplete required placeholder="Prueba atributos">
+			<br />
+			<br />
+			<!-- 4 number -->
+			<label for="numero">Number: </label>
+			<input type="number" id="numero" max="9" min="1"><br /><br />
+			
+			<!-- type file -->
+			<label for="fichero">Ficheros: </label>
+			<input type="file" id="fichero" multiple="multiple"><br /><br />
+			
+			<label for="contraseña">Contraseña: </label>
+			<input type="password" pattern="^[0-9][0-9a-zA-Z]{6,}[A-Z]$" ><br /><br />
+			
+			<progress id="barra"value="0" max="16"></progress>
+			
+				<input type="submit" value="Enviar">
+ 			 </fieldset>
+    </form>
+			<footer>
+				<p>
+					&copy; Copyright  by iMac 9
+				</p>
+			</footer>
+			
+<script src="jquery-2.0.3.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		var $input=$('form :input');
+		var $progress= $("progress").attr('max', $input.length-1);
+		
+		$input.on('blur', function(e){
+			var $this=$(this);
+			if($this.val().length>0){
+				$progress.attr('value', parseInt($progress.attr('value'))+1);
+			}
+			
+		});
+	});
+</script>
+	</body>
+</html>
