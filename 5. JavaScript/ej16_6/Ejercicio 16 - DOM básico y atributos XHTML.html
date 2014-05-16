@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0063)http://www.arkaitzgarro.com/javascript/snippets/cap18/ej15.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Ejercicio 14 - DOM básico y atributos XHTML</title>
+    
+ 	<style type="text/css">
+        .oculto { display: none; }
+        .visible { display: inline; }
+    </style>
+    
+    <script type="text/javascript">
+     window.onload = function() {
+     	window.$ = function (selector){
+	   			return document.querySelectorAll(selector);
+			}
+			
+			var enlaces=$('a');
+			console.log(enlaces.length);
+			
+			for(var i=0; i<enlaces.length;i++){
+				enlaces[i].addEventListener("click", muestraOculta);
+				// console.log(i);
+			}
+			var muestraOculta= function() {
+    	   		var miDiv=this.parentNode;
+    	   		var p=miDiv.querySelectorAll("p:first-child");
+    	   		if(p.className="oculto"){
+					p.className='visible';   
+					this.firstChild.nodeText=" "; 
+    	   		}
+    	   		else {
+    	   			p.className='oculto';
+    	   			this.firstChild.nodeText=" "; 
+    	   		}
+   			}
+   			// for(var i=0; i<enlaces.length; i++){
+   				// if[enlace[i]!=this){
+//    					
+   				// enlace[i].parentNode.querySelectorAll("p:").className='oculto';
+   				// }
+   			}
+     	}
+   
+    </script>
+</head>
+
+<body>
+  <div>
+    <p id="contenidos_1">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+    </p>
+    <a id="enlace_1" href="">Ocultar contenidos</a>
+  </div>
+     <br>
+<div>
+    <p id="contenidos_2">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+    </p>
+    <a id="enlace_2" href="">Ocultar contenidos</a>
+ </div>
+    <br>
+<div>
+    <p id="contenidos_3">
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Sed mattis enim vitae orci. Phasellus libero. Maecenas nisl arcu, consequat congue, commodo nec, commodo ultricies, turpis. Quisque sapien nunc, posuere vitae, rutrum et, luctus at, pede. Pellentesque massa ante, ornare id, aliquam vitae, ultrices porttitor, pede. Nullam sit amet nisl elementum elit convallis malesuada. Phasellus magna sem, semper quis, faucibus ut, rhoncus non, mi. Duis pellentesque, felis eu adipiscing ullamcorper, odio urna consequat arcu, at posuere ante quam non dolor. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Duis scelerisque.
+    </p>
+    <a id="enlace_3" href="">Ocultar contenidos</a>
+ </div>
+    <br>
+
+
+</body>
+</html>

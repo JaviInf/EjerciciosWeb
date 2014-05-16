@@ -1,0 +1,70 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0063)http://www.arkaitzgarro.com/javascript/snippets/cap18/ej16.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><script id="tinyhippos-injected">if (window.top.ripple) { window.top.ripple("bootstrap").inject(window, document); }</script><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>Ejercicio 17 - Información sobre eventos</title>
+
+    <style type="text/css">
+    	body {font-family: arial, helvetica;}
+    	#info {width:160px; border:thin solid silver; padding:.5em; position:fixed;}
+    	#info h1 {margin: 0;}
+    </style>
+
+    <script type="text/javascript">
+    window.onload = function() {
+    		window.$ = function (selector){
+	   			return document.querySelectorAll(selector);
+			}
+		
+    	function muestraInformacion(mensaje) {
+        	document.getElementById("info").innerHTML = '<h1>'+mensaje[0]+'</h1>';
+        	for(var i=1; i<mensaje.length; i++) {
+          	  document.getElementById("info").innerHTML += '<p>'+mensaje[i]+'</p>';
+       	 }
+       	}
+       	 
+       	 var informacion = function(elEvento){
+       	 	var evento=elEvento;
+       	 	if(evento.type=='mousemove'){
+       	 		var corXab = evento.pageX;
+        		var corYab = evento.pageY;
+        		var corXrel = evento.clientX;
+      			var corYrel = evento.clientY;
+      			muestraInformacion(['Raton', 'Navegador ['+corXrel+', '+corYrel+']', 'Pagina ['+corXab+', '+corYab+']']);
+       	 		
+       	 	}
+       	 	else if(evento.type=='keypress'){
+       	 		var caracter=evento.charCode || evento.keyCode;
+       	 		var letra = String.fromCharCode(caracter);
+      			var codigo = letra.charCodeAt(0);
+      			muestraInformacion(['Teclado', 'Caracter ['+letra+']', 'Codigo ['+codigo+']']);
+       	 	}
+       	 }
+       	 
+       	var color= function(elEvento){
+       		var evento=elEvento;
+       		var info=$('#info');
+       		if(evento.type=='mousemove'){
+       			info[0].style.backgroundColor='#FFFFCC';
+       		}
+       		else if (evento.type=='keypress'){
+       			info[0].style.backgroundColor = '#CCE6FF';
+       		}	
+       	}
+       	 document.addEventListener('mousemove',informacion);
+       	 document.addEventListener('keypress',informacion);
+       	 document.addEventListener('mousemove',color);
+       	 document.addEventListener('keypress',color);
+
+       	}
+    </script>
+</head>
+
+<body>
+
+    <div id="info">
+    	
+    </div>
+
+
+</body></html>
