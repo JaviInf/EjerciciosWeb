@@ -1,0 +1,40 @@
+.start {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    margin: 5em;
+}
+
+#clock {
+    position: relative;
+    width: 378px;
+    height: 378px;
+    background-image: url('../img/clockFace.png');
+    left: 50%;
+    margin: 5em 0 0 -189px;
+}
+
+#clock div {
+    position: absolute;
+}
+
+#clock #second img {
+	animation: rota 10s infinite linear;
+	
+}
+
+#clock #minute img {
+	animation: rota 100s infinite linear;
+}
+
+#clock #hour img{
+	animation: rota 1000s infinite linear;
+}
+
+@keyframes rota {
+	from {transform:rotate(0deg);
+	}
+	to {transform: rotate(360deg);
+	}
+}
+/* ANIMACIONES Y TRANSFORMACIONES */

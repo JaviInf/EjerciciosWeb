@@ -1,0 +1,165 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN"
+    "http://www.w3.org/TR/html4/strict.dtd">
+<html lang="es">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Ejercicio 3 - Animacion CSS</title>
+          <script type="text/javascript" src="../prefixfree.min.js"></script>
+        <style type="text/css" media="screen">
+        
+        
+        body {
+            margin: 0px;
+        }
+        #container{
+            background: #666 url(ej03_tree.jpg) no-repeat -60px 0;
+            width: 420px;
+            height: 480px;
+            position: relative;
+        }
+        
+        .snowflake {
+        	margin-top:-15;
+        	animation-duration: 3s;
+       	 	animation-name: nieve;
+       	 	animation-iteration-count: infinite;
+       	 	
+       	 
+       	 	
+            color: #fff;
+            font-size: 2em;
+            position: absolute;
+        	}
+        
+        @keyframes nieve {
+  			  0% {
+      			  top: 0%;
+      			  
+  			  }
+  			  
+  			  5%{
+  			  	/*opacity: 0.5;*/
+  			  	
+  			  }
+  			  
+  			  50%{
+  			  	
+  			  }
+  			  
+  			  75% {
+  			  	/*opacity: 1;*/
+  			  	
+  			  }
+ 
+   			 100% {
+        		top: 100%;
+        		/*opacity: 0;*/
+   			 }
+		}
+		 
+		
+        .snowflake.f1 {
+            left: 40px;
+            animation-delay: 0.25s;
+            animation-duration: 2s;
+            opacity:0.5;
+        }
+        .snowflake.f2 {
+            font-size: 1.8em;
+            left: 120px;
+           animation-delay:1s;
+           animation-duration: 5s;
+        }
+        .snowflake.f3 {
+            left: 200px;
+             animation-duration: 1.3s;
+             animation-delay:0.75s;
+              opacity:0.75;
+        }
+        .snowflake.f4 {
+            font-size: 1.5em;
+            left: 280px;
+            animation-delay:1.2s;
+             animation-duration: 4s;
+             opacity:0.5;
+        }
+         .snowflake.f5 {
+            left: 320px;
+            animation-delay: 0.50s;
+            animation-duration: 1.8s;
+        }
+        .snowflake.f6 {
+            font-size: 1.8em;
+            left: 95px;
+           animation-delay:1.2s;
+           animation-duration: 3s;
+            opacity:0.75;
+        }
+        .snowflake.f7 {
+            left: 150px;
+            animation-delay:1.25s;
+            animation-duration: 1.5s;
+            opacity:0.5;
+        }
+        .snowflake.f8 {
+            font-size: 2.5em;
+            left: 310px;
+            animation-delay:0.6s;
+            animation-duration: 1.1s;
+             opacity:0.75;
+        }
+        
+        .snowflake.f9 {
+        	margin-top:2em;
+            left: 10px;
+            animation-delay: 0.50s;
+            animation-duration: 3s;
+            opacity:0.5;
+        }
+        .snowflake.f10 {
+        	margin-top:3em;
+            font-size: 2.8em;
+            left: 65px;
+           animation-delay:1.2s;
+            animation-duration: 1.4s;
+            
+        }
+        .snowflake.f11 {
+        	margin-top:2em;
+            left: 120px;
+            animation-duration: 2.4s;
+             animation-delay:1.25s;
+              opacity:0.75;
+        }
+        .snowflake.f12 {
+        	margin-top:3em;
+            font-size: 2.5em;
+            left: 210px;
+            animation-delay:0.6s;
+            animation-duration: 3s;
+            opacity:0.5;
+        }
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="snow" class="snow">
+                <div class="snowflake f1">&#10053;</div>
+                <div class="snowflake f2">&#10052;</div>
+                <div class="snowflake f3">&#10053;</div>
+                <div class="snowflake f4">&#10052;</div>
+                <div class="snowflake f5">&#10053;</div>
+                <div class="snowflake f6">&#10052;</div>
+                <div class="snowflake f7">&#10053;</div>
+                <div class="snowflake f8">&#10052;</div>
+                <div class="snowflake f9">&#10052;</div>
+                <div class="snowflake f10">&#10053;</div>
+                <div class="snowflake f11">&#10052;</div>
+                <div class="snowflake f12">&#10053;</div>
+                <div class="snowflake f13">&#10052;</div>
+                
+            </div>
+        </div>
+    </body>
+</html>
