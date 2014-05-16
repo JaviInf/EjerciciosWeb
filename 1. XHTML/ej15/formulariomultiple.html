@@ -1,0 +1,52 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>formulariomultiple</title>
+	<meta name="author" content="iMac 9" />
+	<!-- Date: 2013-12-04 -->
+</head>
+<body>
+<h1>Rellena tu CV</h1>
+
+<form action="http://192.168.1.46/XHTML/ej14/post.php" method="post">
+	<fieldset>
+		<legend>Datos personales</legend>
+	<label for="provincia">Provincia</label><br/>
+	<select id="provincia" name="provincia">
+		<option value="" selected="selected">- selecciona-</option>
+		<option value="gipuzkoa">Gipuzkoa</option>
+		<option value="bizkaia">Bizkaia</option>
+	</select>
+	<br/>
+	
+	<br/>
+	<label for="fecha">Fecha de nacimiento</label><br/>
+	<input type="text" name="dia" value"">de
+	<select name="mes">
+		<option value="enero" >Enero</option>
+		<option value="febrero" selected="selected">Febrero</option>
+		<option value="marzo" >Marzo</option>
+	</select>
+	<input type="text" name="año" value"">
+	<br/><br/>
+	
+	<label for="tema">Tema de interes</label><br/>
+	<select id="tema" name="temainteres[]" size="5" multiple="multiple">
+		<option value="administracion">Administracion de bases de datos</option>
+		<option value="analisis">Analisis y programacion</option>
+		<option value="arquitectura">Arquitectura</option>
+		<option value"Calidad">Calidad</option>
+		<option value="erp">ERP, CRM, Businnes Intelligence</option>
+	</select>
+	
+<input type="submit" name="enviar" value="Enviar formulario">
+
+	</fieldset>
+	
+</form>
+</body>
+</html>
+

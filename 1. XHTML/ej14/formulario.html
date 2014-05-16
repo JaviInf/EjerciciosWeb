@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "http://www.w3.org/TR/html4/strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>formulario</title>
+	<meta name="author" content="iMac 9" />
+	<!-- Date: 2013-12-04 -->
+</head>
+<body>
+<h1>Rellena tu CV</h1>
+
+ <form action="http://192.168.1.46/XHTML/ej14/post.php" method="post" enctype="multipart/form-data">
+            <label for="nombre">Nombre</label>
+            <br/>
+            <input type="text" id="nombre" maxlength="30" name="nombre" value="" />
+            <br/>
+            
+            <label for="apellido">Apellidos</label>
+            <br/>
+            <input type="text" id="apellido" maxlength="80" name="apellidos" value=" "/>
+            <br/>
+            
+            <label for="contraseña">Contraseña</label><br/>
+            <input type="password"  id="contraseña" maxlength="10" name="contraseña" value=""/>
+            <br/>
+            
+            DNI<br/>
+            <input type="text" name="DNI" value="" />
+            <br />
+            
+            Sexo
+            <br />
+            <input type="radio" name="sexo" checked="checked" value="hombre" />Hombre
+            <br/>
+            <input type="radio" name="sexo" value="mujer"/>Mujer
+            <br/>
+            <br/>
+            Incluir mi foto
+            <input type="file" name="foto"/>
+            <br/>
+            <br/>
+            <input type="checkbox" name="boletin" checked="checked"/> Suscribirme al boletin de novedades
+            <br/>
+            
+            <input type="hidden" name="prueba" value="Prueba de campo hidden"/>
+            <br/>
+            <input type="submit" name="enviar" value="Guardar cambios" />
+            <input type="reset" name="limpiar" value="Borrar datos del formulario" />
+            
+        </form>
+</body>
+</html>
+
